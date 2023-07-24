@@ -1,23 +1,27 @@
-def connect_to_database():
-    conn = psycopg2.connect(
-        host="127.0.0.1",
-        database="yüzTanima",
-        user="postgres",
-        password="1404"
-    )
-    return conn
-def save_image_to_database(image_path, gender, age, emotion, verified):
-    conn = connect_to_database()
-    cursor = conn.cursor()
 
-    insert_query = "INSERT INTO images (image_path, gender, age, emotion, verified) VALUES (%s, %s, %s, %s, %s)"
-    data = (image_path, json.dumps(gender), age, emotion, verified)
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
-    print("Insert Query:", insert_query)
-    print("Data:", data)
 
-    cursor.execute(insert_query, data)
+'''
+mongo db pass: 
 
-    conn.commit()
-    cursor.close()
-    conn.close()
+test : oumUKp6wiGI67ed7
+admin: admin 
+
+
+'''
+
+def get_connect_db(username,password):
+
+    uri = f"mongodb+srv://{username}:{password}@cluster-stockmarket.ysmczsq.mongodb.net/?retryWrites=true&w=majority"
+
+    # Create a new client and connect to the server
+    client = MongoClient(uri, server_api=ServerApi('1'))
+
+    # Send a ping to confirm a successful connection
+    try:
+        client.admin.command('ping')
+        print("Pinged your deployment. You successfully connected to MongoDB!")
+    except Exception as e:
+        print(e)
