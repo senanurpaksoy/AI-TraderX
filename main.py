@@ -1,5 +1,12 @@
-import Stockdata
+
+from Service import Stockdata
+
 
 def main():
-    Stockdata.get_stock_data("AAPL")
+    print("Hello World")
+
+
+
+if __name__ == '__main__':
+    Stockdata.get_stock_market("AAPL")
     print("Hello World!")

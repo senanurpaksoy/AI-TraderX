@@ -14,3 +14,6 @@ def get_stock_market(stockmarket):
         # display Company Beta
     print(" Company Beta : ", stockMarketData.info['beta'])
 
+
+
+
