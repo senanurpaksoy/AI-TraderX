@@ -1,7 +1,7 @@
 import yfinance as yahooFinance
 
 
-def get_stock_market(stockmarket):
+def get_stock_market(stockmarket,startDate,endDate):
 
     stockMarketData = yahooFinance.Ticker(f"{stockmarket}")
 
@@ -13,6 +13,8 @@ def get_stock_market(stockmarket):
 
         # display Company Beta
     print(" Company Beta : ", stockMarketData.info['beta'])
+    # Hisse senedi fiyatları
+    print(" Company Close Value : ", stockMarketData.info['Close'])
 
 
 
