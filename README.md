@@ -33,8 +33,13 @@ Proje lisans bilgilerini ve kullanım şartlarını belirtmek için bu bölümü
 - Diğer lisans veya kullanım gereksinimleri
 
 ---
+## Sınıflar
+### AppTime 
+ * Uygulamanın zaman çizelgesini belirliyor. Ülkelerin borsalarını kullanacaksak aktif şekilde zaman kullanmalıyız. yani UTC+4 de olan ülke 10 da başlayacak kron. Tabi ilke deneme 10-18 arası uygulamadım.
+### Regression 
+ * Makine tahmin algoritmalarımız burada duracak. Buradan dağıtacağız diğer sınıflara.
 
-Örnekler ve detaylı açıklamalar için lütfen README dosyasını düzenleyin.
+
 
 ## Özellikler
 
