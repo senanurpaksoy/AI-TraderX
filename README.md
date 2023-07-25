@@ -38,7 +38,12 @@ Proje lisans bilgilerini ve kullanım şartlarını belirtmek için bu bölümü
  * Uygulamanın zaman çizelgesini belirliyor. Ülkelerin borsalarını kullanacaksak aktif şekilde zaman kullanmalıyız. yani UTC+4 de olan ülke 10 da başlayacak kron. Tabi ilke deneme 10-18 arası uygulamadım.
 ### Regression 
  * Makine tahmin algoritmalarımız burada duracak. Buradan dağıtacağız diğer sınıflara.
+### StockData 
+ * İnternetten çekilen verilerin kontrol mekanizmaları
+### db_transaztions 
+ * Database işlemlerimizi buradan yapacağız.
 
+Detaylı Bilgi için [Notes/Todo.txt](Notes/Todo.txt) bakınız
 
 
 ## Özellikler
