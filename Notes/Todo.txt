@@ -18,3 +18,5 @@
 Not: Biz neden database kullanıyoruz. Verilerimizi  önden çekeceksek ne gerek var. Sürekli verilerimizi güncel tutmak gerekiyor.
 
 Database'de nasıl işleyeceğiz ?  
+
+
