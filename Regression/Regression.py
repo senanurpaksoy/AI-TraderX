@@ -2,7 +2,7 @@ from sklearn.ensemble import RandomForestRegressor
 import Data.Stockdata as sd
 import datetime
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression,LogisticRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
@@ -59,11 +59,24 @@ def random_forest_predict(data):
     rf.fit(np.arange(len(data)).reshape(-1, 1), data)
     return rf.predict([[len(data)]])[0]
 
+def polynomial_regression_predict(data):
+    # Polinom Regresyon için derecesi 2 olan bir polinom modeli kullanalım.
+    poly_features = np.polyfit(np.arange(len(data)), data, 2)
+    poly_reg = np.poly1d(poly_features)
+    return poly_reg(len(data))
+
 def svr_predict(data):
     svr = SVR()
     svr.fit(np.arange(len(data)).reshape(-1, 1), data)
     return svr.predict([[len(data)]])[0]
 
+def logistic_regression_predict(data):
+    x = np.arange(len(data)).reshape(-1, 1)
+    y = (data.shift(-1) > data).astype(int)  # Binary classification (1 if next day price increase, 0 otherwise)
+
+    lr = LogisticRegression()
+    lr.fit(x, y)
+    return lr.predict([[len(data)]])[0]
 
 '''
 def neural_network_predict(data):
@@ -90,16 +103,19 @@ plt.axvline(x=aapl_data.index[-1], color='red', linestyle='--', label='Predictio
 
 
 linear_regression_result = linear_regression_predict(aapl_data)
+polynomial_regression_result = polynomial_regression_predict(aapl_data)
 decision_tree_result = decision_tree_predict(aapl_data)
 random_forest_result = random_forest_predict(aapl_data)
 svr_result = svr_predict(aapl_data)
-
+logistic_regression_result = logistic_regression_predict(aapl_data)
 
 # Algoritmaların tahminleri
 plt.scatter(aapl_data.index[-1], linear_regression_result, color='green', marker='o', label='Linear Regression')
+plt.scatter(aapl_data.index[-1], polynomial_regression_result, color='cyan', marker='o', label='Polynomial Regression')
 plt.scatter(aapl_data.index[-1], decision_tree_result, color='orange', marker='o', label='Decision Tree')
 plt.scatter(aapl_data.index[-1], random_forest_result, color='purple', marker='o', label='Random Forest')
 plt.scatter(aapl_data.index[-1], svr_result, color='magenta', marker='o', label='SVR')
+plt.scatter(aapl_data.index[-1], logistic_regression_result, color='yellow', marker='o', label='Logistic Regression')
 
 plt.xlabel('Date')
 plt.ylabel('Price')
@@ -112,7 +128,7 @@ print("Linear Regression Result:", linear_regression_result)
 print("Decision Tree Result:", decision_tree_result)
 print("Random Forest Result:", random_forest_result)
 print("SVR Result:", svr_result)
-print("Neural Network Result:", neural_network_result)
+
 
 
 
