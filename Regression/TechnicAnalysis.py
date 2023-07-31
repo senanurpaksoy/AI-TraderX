@@ -63,21 +63,3 @@ def RSI(stock_symbol):
     stock_data["RSI"] = rsi
     return stock_data["RSI"]
 
-
-# Verileri görselleştirme
-import matplotlib.pyplot as plt
-
-plt.figure(figsize=(12, 6))
-plt.plot(stock_data.index, stock_data["Close"], label="Kapanış Fiyatı", color="blue")
-plt.plot(
-    stock_data.index, stock_data["MA_20"], label="20 Günlük Ortalama", color="orange"
-)
-plt.plot(
-    stock_data.index, stock_data["MA_50"], label="50 Günlük Ortalama", color="green"
-)
-plt.plot(stock_data.index, stock_data["RSI"], label="RSI", color="purple")
-plt.legend()
-plt.title("AAPL Hisse Senedi Fiyatları ve Hareketli Ortalamalar")
-plt.xlabel("Tarih")
-plt.ylabel("Fiyat")
-plt.show()
