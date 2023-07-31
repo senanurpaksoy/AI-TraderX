@@ -8,6 +8,8 @@
       : Kullanıcdan alınan ismin tahmin algoritmasnında bulunan değeri
       : Tahmin algoritmanında bulunan değerin doğruluk oranı döndürülmesi
       : Anlık verilerin çekilmesi
+      : portfoy tamamın yansıtılması -- grafikleri ile beraber bknz : https://github.com/urazakgul/python-portfoy-yonetimi-dersleri/blob/main/imgs/empyrial_hiyerarsik.png
+      : teknik göstergelerin verilmesi
 
 
 

@@ -11,9 +11,6 @@ admin: admin
 
 '''
 
-
-
-
 def get_connect_db(username,password):
 
     uri = f"mongodb+srv://{username}:{password}@cluster-stockmarket.ysmczsq.mongodb.net/?retryWrites=true&w=majority"
