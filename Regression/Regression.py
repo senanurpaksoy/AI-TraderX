@@ -90,6 +90,7 @@ def neural_network_predict(data):
 '''
 
 
+
 def get_stock_data(symbol, start_date, end_date):
     data = yf.download(symbol, start=start_date, end=end_date)
     return data['Close']
@@ -123,6 +124,8 @@ plt.title('AAPL Stock Price Prediction')
 plt.legend()
 plt.grid(True)
 plt.show()
+
+
 
 print("Linear Regression Result:", linear_regression_result)
 print("Decision Tree Result:", decision_tree_result)
