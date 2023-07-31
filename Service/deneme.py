@@ -1,6 +1,6 @@
 import yfinance as yf
 import pandas as pd
-
+import datetime
 # Hisse senedi sembolü
 stock_symbol = "AAPL"
 
@@ -8,6 +8,8 @@ stock_symbol = "AAPL"
 start_date = "2023-01-01"
 end_date = "2023-07-31"
 
+
+print()
 # Veri çekme
 stock_data = yf.download(stock_symbol, start=start_date, end=end_date)
 

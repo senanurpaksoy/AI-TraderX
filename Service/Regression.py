@@ -12,7 +12,7 @@ end_date = "2023-07-31"
 
 # Veri çekme
 stock_data = yf.download(stock_symbol, start=start_date, end=end_date)
-
+print(stock_data)
 # Hisse senedi kapanış fiyatları
 stock_prices = stock_data["Close"]
 

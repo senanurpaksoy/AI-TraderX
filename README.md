@@ -40,7 +40,7 @@ Proje lisans bilgilerini ve kullanım şartlarını belirtmek için bu bölümü
  * Makine tahmin algoritmalarımız burada duracak. Buradan dağıtacağız diğer sınıflara.
 ### StockData 
  * İnternetten çekilen verilerin kontrol mekanizmaları
-### db_transaztions 
+### db_transactions 
  * Database işlemlerimizi buradan yapacağız.
 
 Detaylı Bilgi için [Notes/Todo.txt](Notes/Todo.txt) bakınız
