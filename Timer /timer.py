@@ -4,28 +4,30 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import time
 from datetime import datetime, time as dtime
 import Stockdata
+
 # Başlama ve bitiş GMT+03:00 saatleri
 start_time = dtime(10, 0, 0)  # 10:00:00
-end_time = dtime(18, 0, 0)    # 18:00:00
+end_time = dtime(18, 0, 0)  # 18:00:00
 
 # Başlama zamanlayıcısı
 def start_job(task):
     scheduler = BackgroundScheduler()
-    scheduler.add_job(task, 'cron', hour=start_time, minute='*')
+    scheduler.add_job(task, "cron", hour=start_time, minute="*")
     scheduler.start()
+
 
 # Bitiş zamanlayıcısı
 def end_job():
     scheduler.shutdown()
 
+
 # Görevimiz
 #  Anlık saati döndürür
 def my_task():
-    print("Görev çalıştı:", datetime.now().strftime('%H:%M:%S'))
+    print("Görev çalıştı:", datetime.now().strftime("%H:%M:%S"))
 
 
-
-'''
+"""
 if __name__ == '__main__':
 
 
@@ -50,4 +52,4 @@ if __name__ == '__main__':
 
 
 
-'''
+"""
