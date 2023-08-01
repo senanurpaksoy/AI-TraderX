@@ -12,6 +12,8 @@ from tensorflow.keras.layers import Dense
 import numpy as np
 import yfinance as yf
 
+
+
 stock_data = sd.get_stock_market_data_basic_today("AAPL", "2010-01-01")
 
 

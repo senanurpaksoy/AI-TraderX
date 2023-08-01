@@ -1,6 +1,3 @@
-import Regression.Regression
-from Data import Stockdata
-
 
 def main():
     print("Hello World")
