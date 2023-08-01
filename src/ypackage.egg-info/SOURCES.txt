@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+src/main.py
+src/ypackage.egg-info/PKG-INFO
+src/ypackage.egg-info/SOURCES.txt
+src/ypackage.egg-info/dependency_links.txt
+src/ypackage.egg-info/entry_points.txt
+src/ypackage.egg-info/not-zip-safe
+src/ypackage.egg-info/requires.txt
+src/ypackage.egg-info/top_level.txt

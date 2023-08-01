@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+src/AITradeX.egg-info/PKG-INFO
+src/AITradeX.egg-info/SOURCES.txt
+src/AITradeX.egg-info/dependency_links.txt
+src/AITradeX.egg-info/entry_points.txt
+src/AITradeX.egg-info/not-zip-safe
+src/AITradeX.egg-info/requires.txt
+src/AITradeX.egg-info/top_level.txt

@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: ypackage
+Version: 0.0.0.1
+Summary: AI-TraderX
+Home-page: https://github.com/senanurpaksoy/AI-TraderX
+Author: AfpTheDev
+Author-email: ahmetfarukpala@gmail.com
+License: Apache Software License 2.0
+Project-URL: Changelog, https://github.com/yedhrab/YPackage/blob/master/docs/CHANGELOG.md
+Project-URL: Issue Tracker, https://github.com/yedhrab/YPackage/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
+
+# AI-TraderX
+
+AI-TraderX, borsada otomatik işlem yapmak için tasarlanmış bir yapay zeka aracıdır. Geçmiş fiyat verileri ve çeşitli teknik göstergeleri kullanarak, AI-TraderX, gelecekteki fiyat hareketleri hakkında tahminler yapabilir ve bu tahminlere dayalı olarak işlemler açabilir.
+
+AI-TraderX, hem yeni hem de deneyimli yatırımcılar için uygundur. Yeni yatırımcılar, AI-TraderX'in otomatik işlem yapma yeteneklerinden yararlanarak, piyasayı takip etmek ve doğru zamanda işlemler açmak için gereken zaman ve çabadan tasarruf edebilirler. Deneyimli yatırımcılar, AI-TraderX'in kendi stratejilerini geliştirmek ve test etmek için kullanabilirler.
+
+AI-TraderX, ücretsiz olarak kullanılabilir. Ancak, daha gelişmiş özellikler için bir premium abonelik satın alınabilir.
+
+## Nasıl kullanılır?
+
+AI-TraderX'i kullanmak için, öncelikle bir hesap oluşturmanız ve bir depo yatırmanız gerekir. Ardından, AI-TraderX'e işlem yapmak istediğiniz varlıkları seçebilirsiniz. AI-TraderX, geçmiş fiyat verileri ve çeşitli teknik göstergeleri kullanarak, gelecekteki fiyat hareketleri hakkında tahminler yapabilir ve bu tahminlere dayalı olarak işlemler açabilir.
+
+## Kurulum
+
+1. Projeyi klonlayın veya indirin:
+`git clone https://github.com/senanurpaksoy/AI-TraderX.git`
+
+2. Gerekli Python paketlerini yüklemek için aşağıdaki komutu çalıştırın:
+`pip install -r requirements.txt`
+
+## Veritabanı Yapılandırması
+
+Proje, MongoDB veritabanını kullanmaktadır.
+
+- MongoDB bağlantı ayarları
+- Veritabanı tabloları ve alanları
+
+## Lisans
+
+Proje lisans bilgilerini ve kullanım şartlarını belirtmek için bu bölümü düzenleyin:
+
+- Lisans türü ve bağlantı
+- Diğer lisans veya kullanım gereksinimleri
+
+## Neler Var ? 
+* Timer : Timeline'a göre veri update edecek sistem. şuan için UTC+3 ile çalışıyoruz.
+* Database/Database : MongoDB üzerindnen işlemleri yönetici sınıftır.
+* Data/StockData : Verileri internet üzerinden çekmeye yarar.
+Detaylı Bilgi için [Notes/Todo.txt](Notes/Todo.txt) bakınız
+
+
+## Özellikler
+
+* Geçmiş fiyat verileri ve çeşitli teknik göstergeleri kullanarak, gelecekteki fiyat hareketleri hakkında tahminler yapar.
+* Bu tahminlere dayalı olarak işlemler açar.
+* Hem yeni hem de deneyimli yatırımcılar için uygundur.
+* Ücretsiz olarak kullanılabilir.
+* Daha gelişmiş özellikler için bir premium abonelik satın alınabilir.
+
+## Avantajlar
+
+* Zaman ve çabadan tasarruf sağlar.
+* Piyasayı takip etmek için gereken uzmanlık gerektirmez.
+* Kendi stratejilerinizi geliştirmek ve test etmek için kullanabilirsiniz.
+* Ücretsiz olarak kullanılabilir.
+
+## Sonuç
+
+AI-TraderX, borsada otomatik işlem yapmak için tasarlanmış bir yapay zeka aracıdır. Geçmiş fiyat verileri ve çeşitli teknik göstergeleri kullanarak, AI-TraderX, gelecekteki fiyat hareketleri hakkında tahminler yapabilir ve bu tahminlere dayalı olarak işlemler açabilir. AI-TraderX, hem yeni hem de deneyimli yatırımcılar için uygundur. Yeni yatırımcılar, AI-TraderX'in otomatik işlem yapma yeteneklerinden yararlanarak, piyasayı takip etmek ve doğru zamanda işlemler açmak için gereken zaman ve çabadan tasarruf edebilirler. Deneyimli yatırımcılar, AI-TraderX'in kendi stratejilerini geliştirmek ve test etmek için kullanabilirler.
+
+
